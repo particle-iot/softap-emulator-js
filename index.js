@@ -40,7 +40,7 @@ SoftAPMock.prototype = {
     },
 
     _connect: function(sock) {
-        console.log("received new connection");
+        // console.log("received new connection");
         return this.client.set(sock, { data: '', complete: false, sock: sock });
     },
 
@@ -53,10 +53,10 @@ SoftAPMock.prototype = {
             var length = parts[1];
             var body = parts.slice(2).join('\n');
 
-            console.log("received request:");
-            console.log("cmd: "+cmd);
-            console.log("length: "+length);
-            console.log("body: "+body);
+            // console.log("received request:");
+            // console.log("cmd: "+cmd);
+            // console.log("length: "+length);
+            // console.log("body: "+body);
             cmd in this.commands && this.commands[cmd](client.sock, body);
             processed = true;
         }
@@ -116,7 +116,7 @@ SoftAPMock.prototype = {
     },
 
     cmd_connect_ap: function(sock, body) {
-        sock.clos();        // simulate switching networks by closing the socket
+        sock.close();        // simulate switching networks by closing the socket
     },
 
     cmd_public_key: function(sock, body) {

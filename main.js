@@ -18,7 +18,7 @@
 
 var net = require("net");
 var settings = require("./settings.js");
-var SoftAPMock = require("./softapmock.js");
+var SoftAPMock = require("./index.js");
 
 mock = new SoftAPMock();
 net.createServer(mock.server()).listen(settings.tcp_port, settings.tcp_host, function() {
