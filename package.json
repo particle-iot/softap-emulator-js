@@ -1,6 +1,6 @@
 {
-    "name": "soft-ap-mock",
-    "version": "0.0.1",
+    "name": "softap-emulator-js",
+    "version": "1.0.0",
     "private": true,
     "author": {
         "name": "Matthew McGowan",
