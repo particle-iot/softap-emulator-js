@@ -1,4 +1,3 @@
-require("net");
 /**
  *    Copyright (C) 2015 Spark Labs, Inc. All rights reserved. -  https://www.spark.io/
  *
