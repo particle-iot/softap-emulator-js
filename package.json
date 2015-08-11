@@ -1,7 +1,7 @@
 {
     "name": "softap-emulator-js",
     "version": "1.0.0",
-    "private": true,
+    "private": false,
     "author": {
         "name": "Matthew McGowan",
         "email": "mat@particle.io",
