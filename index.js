@@ -116,7 +116,7 @@ SoftAPMock.prototype = {
     },
 
     cmd_connect_ap: function(sock, body) {
-        sock.close();        // simulate switching networks by closing the socket
+        sock.end();        // simulate switching networks by closing the socket
     },
 
     cmd_public_key: function(sock, body) {
