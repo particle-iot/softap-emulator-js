@@ -1,24 +1,38 @@
 {
-    "name": "softap-emulator-js",
-    "version": "1.0.0",
-    "private": false,
-    "author": {
-        "name": "Matthew McGowan",
-        "email": "mat@particle.io",
-        "url": "https://www.particle.io/"
-    },
-    "contributors": [
-        {
-            "name": "Emily Rose",
-            "email": "nexxy@particle.io",
-            "url": "https://www.particle.io/"
-        }
-    ],
-    "scripts": {
-        "start": "node main.js"
-    },
-    "dependencies": {
-        "hashmap": "~2.0.0"
-    },
-    "main": "index.js"
+  "name": "softap-emulator-js",
+  "description": "Emulator for a SoftAP device",
+  "version": "1.0.1",
+  "author": {
+    "name": "Matthew McGowan",
+    "email": "mat@particle.io",
+    "url": "https://www.particle.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/spark/softap-emulator-js/issues"
+  },
+  "contributors": [
+    {
+      "name": "Emily Rose",
+      "email": "nexxy@particle.io",
+      "url": "https://www.particle.io/"
+    }
+  ],
+  "dependencies": {
+    "hashmap": "~2.0.0"
+  },
+  "homepage": "https://github.com/spark/softap-emulator-js",
+  "keywords": [
+    "particle",
+    "softap"
+  ],
+  "license": "LGPL-3.0",
+  "main": "index.js",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spark/softap-emulator-js.git"
+  },
+  "scripts": {
+    "start": "node main.js"
+  }
 }
