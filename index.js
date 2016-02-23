@@ -35,8 +35,7 @@ var SoftAPMock = function() {
 SoftAPMock.prototype = {
 
     server: function() {
-        var self = this;
-        return function(sock) { self._socket_handler(sock);  }
+        return this._socket_handler.bind(this);
     },
 
     _connect: function(sock) {
@@ -116,6 +115,7 @@ SoftAPMock.prototype = {
     },
 
     cmd_connect_ap: function(sock, body) {
+        this._send_response(sock, { r: 0 } );
         sock.end();        // simulate switching networks by closing the socket
     },
 
