@@ -32,6 +32,10 @@ var SoftAPMock = function() {
     }
 };
 
+function chunkString(str, length) {
+    return str.match(new RegExp('.{1,' + length + '}', 'g'));
+}
+
 SoftAPMock.prototype = {
 
     server: function() {
@@ -92,7 +96,11 @@ SoftAPMock.prototype = {
     },
 
     _send_response: function(sock, response) {
-        sock.write(JSON.stringify(response));
+        var json = JSON.stringify(response);
+        var chunks = chunkString(json, 10);
+        for(var i = 0; i < chunks.length; i++) {
+            sock.write(chunks[i]);
+        }
     },
 
     _parse_request_json: function(body) {

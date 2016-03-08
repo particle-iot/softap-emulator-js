@@ -25,7 +25,9 @@ module.exports = {
     claimed: false,                             // if this device is claimed or not
     public_key: "30819F300D06092A864886F70D010101050003818D0030818902818100C3F333868D89524B4ADD33AC523F07C518F50E66CF531F92F15DAEFB686591C2B3FB2BD11D0558D342E890391F5E92FF41996E69C0FCD040824C7C95F0B1EDF175535CFF3946013896EA1BD3D4F53C20E8D9ECCA505E149C75061C9B97625F36C930715EE06AB7C463AABF42E89B712474822306E0585742189EE365CCDE19150203010001",
     scans: [
-        { "ssid":"ssid-name", "rssi":-30, "sec":1234, "ch":5, "mdr":54000 } /* ... */
+        { "ssid":"ssid-name1", "rssi":-30, "sec":1234, "ch":5, "mdr":54000 },
+        { "ssid":"ssid-name2", "rssi":-30, "sec":1234, "ch":5, "mdr":54000 },
+        { "ssid":"ssid-name3", "rssi":-30, "sec":1234, "ch":5, "mdr":54000 },
     ],
 
     tcp_host: "127.0.0.1",
