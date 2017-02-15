@@ -1,7 +1,7 @@
 {
   "name": "softap-emulator-js",
   "description": "Emulator for a SoftAP device",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "Matthew McGowan",
     "email": "mat@particle.io",
