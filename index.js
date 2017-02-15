@@ -101,6 +101,7 @@ SoftAPMock.prototype = {
         for(var i = 0; i < chunks.length; i++) {
             sock.write(chunks[i]);
         }
+	sock.end();        // the device closes its end of the socket
     },
 
     _parse_request_json: function(body) {
@@ -124,7 +125,6 @@ SoftAPMock.prototype = {
 
     cmd_connect_ap: function(sock, body) {
         this._send_response(sock, { r: 0 } );
-        sock.end();        // simulate switching networks by closing the socket
     },
 
     cmd_public_key: function(sock, body) {
