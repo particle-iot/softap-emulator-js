@@ -13,7 +13,7 @@
  *    You should have received a copy of the GNU Affero General Public License
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- *    You can download the source here: https://github.com/spark/softap-emulator-js
+ *    You can download the source here: https://github.com/particle-iot/softap-emulator-js
  */
 
 var HashMap = require('hashmap').HashMap;

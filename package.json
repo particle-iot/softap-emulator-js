@@ -8,7 +8,7 @@
     "url": "https://www.particle.io/"
   },
   "bugs": {
-    "url": "https://github.com/spark/softap-emulator-js/issues"
+    "url": "https://github.com/particle-iot/softap-emulator-js/issues"
   },
   "contributors": [
     {
@@ -20,7 +20,7 @@
   "dependencies": {
     "hashmap": "~2.0.0"
   },
-  "homepage": "https://github.com/spark/softap-emulator-js",
+  "homepage": "https://github.com/particle-iot/softap-emulator-js",
   "keywords": [
     "particle",
     "softap"
@@ -30,7 +30,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/spark/softap-emulator-js.git"
+    "url": "https://github.com/particle-iot/softap-emulator-js.git"
   },
   "scripts": {
     "start": "node main.js"
